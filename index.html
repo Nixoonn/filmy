@@ -1,0 +1,84 @@
+Html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Database</h1>
+        <div class="movie-list">
+            <h2>Currently Available Movies:</h2>
+            <ul>
+                <li>The Godfather</li>
+                <li>The Shawshank Redemption</li>
+                <li>Schindler's List</li>
+            </ul>
+        </div>
+        <div class="add-movie">
+            <h2>Add Your Own Movie:</h2>
+            <form action="">
+                <label for="title">Movie Title:</label>
+                <input type="text" name="title" id="title">
+                <input type="submit" value="Add Movie">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+CSS
+
+body {
+    font-family: sans-serif;
+    color: #444;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.movie-list, .add-movie {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+}
